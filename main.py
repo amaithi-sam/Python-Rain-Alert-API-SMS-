@@ -2,17 +2,17 @@
 from twilio.rest import Client
 import requests
 
-#------------------Teilio API -----------
+#------------------Twilio API -----------
 
-account_sid = "AC26e1b11672f18e66586c15a64e72b07f"
-auth_token = "c26fa9ec2712b38bc539f01678d029e3"
+account_sid = ""
+auth_token = ""
 
 #-------------------Open weathermap API----------
-open_weather_Endpoint = "https://api.openweathermap.org/data/2.5/onecall"
-api_key = "a73601fe1feaf29b19870b2a22c9d0e1"
+open_weather_Endpoint = "https://api.openweathermap.org"
+api_key = ""
 
-parameter = {"lat": 13.337830,
-             "lon": 80.192902,
+parameter = {"lat": ,
+             "lon": ,
              "appid": api_key,
              "exclude": "current,minutely,daily"
 
@@ -38,8 +38,8 @@ if will_rain:
     message = client.messages \
         .create(
         body="It's Going to rain today. Remember to bring umbrella ☂ ️..Twilio Sample _amaithi",
-        from_='+18635938887',
-        to='+919791430778'
+        from_='',
+        to=''
     )
     print(message.status)
 
